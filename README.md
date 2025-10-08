@@ -115,7 +115,7 @@ The example data used in this repository (Buffalo 311 call requests) is from:
 The full paper describing the methodology, validation, and applications is available online. If you use the code from this repository or from GALAX, we will really appreciate if you can cite our paper:
 
 ```bibtex
-[citation]
+Wang, P., Yuan, Y., Li, L., & Lu, Y. (2025). GALAX: A Framework for Geospatial Analysis Leveraging AutoML and eXplainable AI. *Annals of the American Association of Geographers*.
 ```
 
 ## Acknowledgments
