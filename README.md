@@ -104,7 +104,7 @@ results.summary()
 results.save_results('results/GALAX_results_class.joblib')
 ```
 
-## Data Attribution
+## Data Sources
 
 The example data used in this repository (Buffalo 311 call requests) is from:
 
