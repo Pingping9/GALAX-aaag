@@ -1,5 +1,22 @@
 # **GALAX**: A Framework for **G**eospatial **A**nalysis **L**everaging **A**utoML and e**X**plainable AI
 
+[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![License: BSD-3-Clause](https://img.shields.io/badge/license-BSD--3--Clause-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-v1.0-brightgreen.svg)](https://github.com/yourusername/GALAX/releases/tag/v1.0)
+
+## Table of Contents
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Required Python Packages](#required-python-packages)
+- [Basic Example - Regression](#basic-example---regression)
+- [Basic Example - Classification](#basic-example---classification)
+- [Visualization Examples](#visualization-examples)
+- [Data Attribution](#data-attribution)
+- [Data Sources](#data-sources)
+- [Contact](#contact)
+- [Citation](#citation)
+- [Acknowledgments](#acknowledgments)
+
 ## Overview
 
 GALAX (**G**eospatial **A**nalysis **L**everaging **A**utoML and e**X**plainable AI) is a novel framework that integrates Automated Machine Learning (AutoML), eXplainable AI (XAI), and Geographically Weighted Regression (GWR) for spatial analysis. GWR is a powerful tool for understanding spatial heterogeneity, but it faces critical limitations: reliance on linear regression restricts its ability to capture non-linear relationships, struggles with high-dimensional feature spaces, and lacks support for classification tasks. While machine learning approaches can address these limitations, they often lack spatial awareness and operate as "black boxes" with limited interpretability. GALAX addresses these challenges by introducing a unified framework that integrates spatially adaptive AutoML with explainable AI capabilities.
@@ -10,6 +27,58 @@ GALAX represents a significant methodological advancement through three core inn
 3. **Unified Framework**: Supports both regression and classification tasks within a unified framework.
 
 This repository contains the source code of the GALAX model and example datasets.
+
+## Repository Structure
+
+```
+GALAX-aaag/
+│
+├── galax/                      # Main package directory
+│   └── GALAX.py               # Core GALAX implementation
+│
+├── examples/                   # Jupyter notebook demonstrations
+│   ├── regression_demo.ipynb  # Regression analysis with visualizations
+│   └── classification_demo.ipynb # Classification analysis with visualizations
+│
+├── data/                       # Example datasets
+│   ├── 311Request.csv         # Buffalo 311 requests (regression)
+│   └── 311Request_class.csv   # Buffalo 311 requests (classification)
+│   └── buffalo/               # Buffalo vector map
+│       ├── buffalo.shp
+│       ├── buffalo.cpg
+│       ├── buffalo.dbf
+│       ├── buffalo.prj
+│       ├── buffalo.sbn
+│       ├── buffalo.sbx
+│       ├── buffalo.shx
+│       └── buffalo.shp.xml
+│
+├── results/                    # Example output files
+│   ├── GALAX_regression_results.joblib
+│   ├── GALAX_classification_results.joblib
+│   ├── regression_feature.png
+│   ├── regression_r2.png
+│   ├── classification_precision.png
+│   └── classification_feature.png
+│
+├── README.md
+├── requirements.txt            # Python dependencies
+└── LICENSE                     # License information
+```
+
+### Folder and File Descriptions
+
+- **`galax/`**: Contains the main GALAX module with all classes and functions for model fitting, bandwidth selection, and result processing.
+
+- **`examples/`**: Interactive Jupyter notebooks demonstrating:
+  - How to prepare data for GALAX
+  - Model configuration and fitting
+  - Performance evaluation
+  - Visualization of results
+
+- **`data/`**: Sample datasets from Buffalo 311 call requests for testing and demonstration purposes.
+
+- **`results/`**: Example output files showing the structure of saved GALAX results, including predictions, SHAP values, and performance metrics.
 
 ## Required Python Packages
 
@@ -104,11 +173,35 @@ results.summary()
 results.save_results('results/GALAX_results_class.joblib')
 ```
 
-## Data Sources
+## Visualization Examples
+
+GALAX provides rich visualization capabilities to understand spatial patterns and model behavior:
+
+### Local Performance Metrics
+![Local Metrics](results/regression_r2.png)
+*Spatial variation in R² across locations*
+
+### SHAP Feature Importance
+![SHAP Importance](results/regression_feature.png)
+*local feature importance for the most important feature revealed through SHAP values*
+
+**Note**: See the Jupyter notebooks in `examples/` for more visualizations generated from the Buffalo 311 dataset.
+
+## Data Attribution
 
 The example data used in this repository (Buffalo 311 call requests) is from:
 
 **Sun, K., Zhou, R. Z., Kim, J., & Hu, Y. (2024). PyGRF: An improved Python Geographical Random Forest model and case studies in public health and natural disasters. *Transactions in GIS*, 28(7), 2476-2491.**
+
+## Contact
+
+For questions, suggestions, or collaborations, please contact:
+
+- **Pingping Wang** [pingpingwang@txstate.edu]
+- **Dr. Yihong Yuan** [yuan@txstate.edu]
+
+**Future Development: PyGALAX**
+We are actively developing **PyGALAX**, an enhanced Python package that will support additional functions. Stay tuned for the PyGALAX release!
 
 ## Citation
 
