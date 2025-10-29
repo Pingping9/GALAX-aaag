@@ -178,11 +178,11 @@ results.save_results('results/GALAX_results_class.joblib')
 GALAX provides rich visualization capabilities to understand spatial patterns and model behavior:
 
 ### Local Performance Metrics
-![Local Metrics](results/regression_r2.png)
+<img src="results/regression_r2.png" alt="Local Metrics" width="450" />
 *Spatial variation in R² across locations*
 
 ### SHAP Feature Importance
-![SHAP Importance](results/regression_feature.png)
+<img src="results/regression_feature.png" alt="SHAP Importance" width="450" />
 *local feature importance for the most important feature revealed through SHAP values*
 
 **Note**: See the Jupyter notebooks in `examples/` for more visualizations generated from the Buffalo 311 dataset.
