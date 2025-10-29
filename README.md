@@ -42,7 +42,7 @@ GALAX-aaag/
 │
 ├── data/                       # Example datasets
 │   ├── 311Request.csv         # Buffalo 311 requests (regression)
-│   └── 311Request_class.csv   # Buffalo 311 requests (classification)
+│   ├── 311Request_class.csv   # Buffalo 311 requests (classification)
 │   └── buffalo/               # Buffalo vector map
 │       ├── buffalo.shp
 │       ├── buffalo.cpg
