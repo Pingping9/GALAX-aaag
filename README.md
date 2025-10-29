@@ -54,8 +54,6 @@ GALAX-aaag/
 │       └── buffalo.shp.xml
 │
 ├── results/                    # Example output files
-│   ├── GALAX_regression_results.joblib
-│   ├── GALAX_classification_results.joblib
 │   ├── regression_feature.png
 │   ├── regression_r2.png
 │   ├── classification_precision.png
