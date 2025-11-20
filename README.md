@@ -211,4 +211,4 @@ Wang, P., Yuan, Y., Li, L., & Lu, Y. (2025). GALAX: A Framework for Geospatial A
 
 ## Acknowledgments
 
-Our deep and sincere thanks go to the anonymous reviewers for their constructive comments, which greatly improved the content and clarity of this article. We thank SafeGraph for providing the mobility data used in the analysis. This research is supported by the Texas State University College of Liberal Arts 2024-2025 Research Seed Grant.
+Our deep and sincere thanks go to the anonymous reviewers for their constructive comments, which greatly improved the content and clarity of this article. We thank SafeGraph for providing the mobility data used in the analysis. The first author and second author appreciate the support by the Texas State University College of Liberal Arts 2024-2025 Research Seed Grant.
