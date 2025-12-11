@@ -12,7 +12,6 @@
 - [Basic Example - Classification](#basic-example---classification)
 - [Visualization Examples](#visualization-examples)
 - [Data Attribution](#data-attribution)
-- [Data Sources](#data-sources)
 - [Contact](#contact)
 - [Citation](#citation)
 - [Acknowledgments](#acknowledgments)
