@@ -205,9 +205,9 @@ We are actively developing **PyGALAX**, an enhanced Python package that will sup
 The full paper describing the methodology, validation, and applications is available online. If you use the code from this repository or from GALAX, we will really appreciate if you can cite our paper:
 
 ```bibtex
-Wang, P., Yuan, Y., Li, L., & Lu, Y. (2025). GALAX: A Framework for Geospatial Analysis Leveraging AutoML and eXplainable AI. Annals of the American Association of Geographers.
+Wang, P., Yuan, Y., Li, L., & Lu, Y. (2025). GALAX: A Framework for Geospatial Analysis Leveraging AutoML and eXplainable AI. Annals of the American Association of Geographers, 1–27. https://doi.org/10.1080/24694452.2025.2591684
 ```
 
 ## Acknowledgments
 
-Our deep and sincere thanks go to the anonymous reviewers for their constructive comments, which greatly improved the content and clarity of this article. We thank SafeGraph for providing the mobility data used in the analysis. The first author and second author appreciate the support by the Texas State University College of Liberal Arts 2024-2025 Research Seed Grant.
+Our deep and sincere thanks go to the anonymous reviewers for their constructive comments, which greatly improved the content and clarity of this article. We thank SafeGraph for providing the mobility data used in the analysis. The first and second authors received funding support from the Texas State University College of Liberal Arts 2024-2025 Research Seed Grant.
